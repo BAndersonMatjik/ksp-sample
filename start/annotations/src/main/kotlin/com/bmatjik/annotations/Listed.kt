@@ -1,5 +1,6 @@
 package com.bmatjik.annotations
 
-@Target( AnnotationTarget.CLASS, AnnotationTarget.PROPERTY)
+@Target( AnnotationTarget.CLASS)
 @Retention(AnnotationRetention.SOURCE)
 annotation class Listed(val name: String="")
+

@@ -1,11 +1,11 @@
 package com.bmatjik.sample
 
+import com.bmatjik.annotations.IgnoreField
 import com.bmatjik.annotations.Listed
 
 //data class Sample1(@Listed("nik") val nik :String)
-
 @Listed
-data class Sample2( val nik :Int,val z:Int)
+data class Sample2( val nik :Int, val z:Int)
 
 
 fun main() {
@@ -18,6 +18,5 @@ fun main() {
 //        arg2 = listOf(0, 1, null),
 //        arg3 = listOf(mapOf("sample key" to 0))
 //    )
-
-    Sample2(1,2)
+    Sample2Ext.members()
 }

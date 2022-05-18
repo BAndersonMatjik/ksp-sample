@@ -20,7 +20,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ksp-sample"
+rootProject.name = "genfieldtolist"
 
 include(":annotations")
 include(":processor")

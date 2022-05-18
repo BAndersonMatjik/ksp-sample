@@ -24,12 +24,12 @@ class FieldToListProcessorTest {
             "file1.kt", """
         package com.tests.summable
         
+        import com.bmatjik.annotations.IgnoreField
         import com.bmatjik.annotations.Listed
-
+          @Listed
           data class FooSummable(
-            @Listed
+            @IgnoreField
             val bar: Int = 234,
-            @Listed
             val baz: Int = 123
           )
     """
